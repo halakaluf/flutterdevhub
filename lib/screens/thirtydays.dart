@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import './thirtydays/simplestopwatch.dart' as simplestopwatch;
-
-
-//SpinKitWave(color: Color.fromRGBO(215, 40, 40, 0.9), type: SpinKitWaveType.start);
+import './thirtydays/customfonts.dart' as customfonts;
 
 class Thirtydays extends StatelessWidget {
   @override
@@ -27,7 +24,10 @@ class Thirtydays extends StatelessWidget {
           subtitle: Text('Project 02 - CustomFont'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
-            print('horse');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => customfonts.CustomFonts("Project 01 - SimpleStopWatch")),
+            );
           }
         ),
         ListTile(

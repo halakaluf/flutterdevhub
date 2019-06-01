@@ -1,21 +1,15 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-
-
 class SimpleStopWatchScreen extends StatefulWidget {
   const SimpleStopWatchScreen(this.title);
 
   final String title;
   @override
-  SimpleStopWatchScreenState createState() => SimpleStopWatchScreenState(this.title);
+  SimpleStopWatchScreenState createState() => SimpleStopWatchScreenState();
 }
 
-
 class SimpleStopWatchScreenState extends State<SimpleStopWatchScreen> with TickerProviderStateMixin {
-  SimpleStopWatchScreenState(this.title);
-  
-  final String title;
   AnimationController controller;
 
   String get timerString {
@@ -37,7 +31,7 @@ class SimpleStopWatchScreenState extends State<SimpleStopWatchScreen> with Ticke
     ThemeData themeData = Theme.of(context);
     return Scaffold(
       appBar: new AppBar(
-        title: new Text(this.title),
+        title: new Text(widget.title),
         backgroundColor: Colors.blue
       ),
       body: Padding(

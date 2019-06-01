@@ -38,7 +38,16 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
+  fonts:
+    - family: Alyfe_Demo
+      fonts:
+        - asset: assets/fonts/Alyfe_Demo.ttf
+    - family: vtks_distress
+      fonts:
+        - asset: assets/fonts/vtks_distress.ttf
+    - family: Antibalon
+      fonts:
+        - asset: assets/fonts/Antibalon.otf
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
