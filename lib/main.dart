@@ -34,17 +34,18 @@ class TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("Flutter Dev Hub"),
-        backgroundColor: Color.fromRGBO(215, 40, 40, 0.9)
+        backgroundColor: Colors.blue
       ),
       bottomNavigationBar: new Material(
-        color: Color.fromRGBO(215, 40, 40, 0.9),
+        color: Colors.blue,
         child: SafeArea(
           child: new TabBar(
-          controller: tabController,
-          tabs: <Tab>[
-            new Tab(text: "Thirty Days"),
-            new Tab(text: "Challennges")
-          ],
+            indicatorColor: Colors.white,
+            controller: tabController,
+            tabs: <Tab>[
+              new Tab(text: "Thirty Days"),
+              new Tab(text: "Challennges")
+            ],
         ),
         )
       ),
