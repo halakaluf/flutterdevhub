@@ -45,7 +45,7 @@ class TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
             tabs: <Tab>[
               new Tab(text: "Thirty Days"),
               new Tab(text: "Challennges")
-            ],
+            ]
         ),
         )
       ),
