@@ -38,8 +38,8 @@ class TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
                 indicatorColor: Colors.white,
                 controller: tabController,
                 tabs: <Tab>[
-                  new Tab(text: "Thirty Days"),
-                  new Tab(text: "Challennges")
+                  new Tab(text: "30 Days of Flutter"),
+                  new Tab(text: "Flutter Challennge")
                 ]),
           )),
       body: new TabBarView(
