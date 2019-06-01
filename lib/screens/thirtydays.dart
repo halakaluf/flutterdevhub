@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
+import './thirtydays/simplestopwatch.dart' as simplestopwatch;
+
+
 //SpinKitWave(color: Color.fromRGBO(215, 40, 40, 0.9), type: SpinKitWaveType.start);
 
 class Thirtydays extends StatelessWidget {
@@ -9,15 +12,18 @@ class Thirtydays extends StatelessWidget {
     return ListView(
       children: <Widget>[
         ListTile(
-          title: Text('1 Day'),
+          title: Text('Day 1'),
           subtitle: Text('Project 01 - SimpleStopWatch'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
-            print('horse');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => simplestopwatch.SimpleStopWatchScreen("Project 01 - SimpleStopWatch")),
+            );
           }
         ),
         ListTile(
-          title: Text('2 Day'),
+          title: Text('Day 2'),
           subtitle: Text('Project 02 - CustomFont'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
@@ -25,7 +31,7 @@ class Thirtydays extends StatelessWidget {
           }
         ),
         ListTile(
-          title: Text('3 Day'),
+          title: Text('Day 3'),
           subtitle: Text('Project 03 - PlayLocalVideo'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
@@ -33,32 +39,32 @@ class Thirtydays extends StatelessWidget {
           }
         ),
         ListTile(
-          title: Text('4 Day'),
-          subtitle: Text('Project 04 - SnapChatMenu'),
+          title: Text('Day 4'),
+          subtitle: Text('Working in progress'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
             print('horse');
           }
         ),
         ListTile(
-          title: Text('5 Day'),
-          subtitle: Text('Project 05 - CarouselEffect'),
+          title: Text('Day 5'),
+          subtitle: Text('Working in progress'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
             print('horse');
           }
         ),
         ListTile(
-          title: Text('6 Day'),
-          subtitle: Text('Project 06 - FindMyLocation'),
+          title: Text('Day 6'),
+          subtitle: Text('Working in progress'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
             print('horse');
           }
         ),
         ListTile(
-          title: Text('7 Day'),
-          subtitle: Text('Project 07 - PullToRefresh'),
+          title: Text('Day 7'),
+          subtitle: Text('Working in progress'),
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
             print('horse');
