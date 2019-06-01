@@ -43,7 +43,7 @@ class TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
           controller: tabController,
           tabs: <Tab>[
             new Tab(text: "Thirty Days"),
-            new Tab(text: "Challennges")
+            new Tab(text: "Challenges")
           ],
         ),
         )
