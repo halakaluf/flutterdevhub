@@ -1,6 +1,6 @@
 # flutterdevhub
 
-A new Flutter project.
+Flutter Dev Hub was thought to give developers a starting point for Flutter resources with a 30-day coding exercise to increase yopur skills and sample app challenges that recreate famous apps design giving a glimpse of Flutter power.
 
 ## Getting Started
 
